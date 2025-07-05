@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>WCG eBook Store</title>
+  <link rel="stylesheet" href="style.css">
+  <!-- AOS Library CDN -->
+<link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
+</head>
+<body>
+  <header>
+    <div class="logo">WCG</div>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="#mission">Mission</a></li>
+        <li><a href="https://wisdomcircleblogwcg.blogspot.com/2025/07/vision-behind-wcg-at-wisdom-circle.html">About Us</a></li>
+        <li><a href="store.html">eBooks</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Hero / Intro Section -->
+  <section class="hero" id="home"data-aos="fade-up">
+    <div class="animated-blobs">
+  <span></span><span></span><span></span>
+</div>
+    <h1 data-aos="fade-down">Welcome to Wisdom Circle Group <span id="typewriter-text"></span></h1>
+    <p>Your gateway to visionary eBooks that inspire clarity, growth, and imagination. Discover the power of student-led knowledge.</p>
+    <button class="btn" onclick="scrollToSection('mission')">Learn More</button>
+  </section>
+
+  <!-- Mission Section -->
+  <section class="content-section mission" id="mission"data-aos="fade-up">
+    <h2 data-aos="fade-down">Our Mission</h2>
+    <p>At WCG, we empower young minds to transform innovative ideas into action-packed publications. We believe in curiosity, collaboration, and making education beautifully accessible.</p>
+    <div class="mission-points">
+      <div class="point">
+        <h3 data-aos="fade-down">🌍 Global Knowledge</h3>
+        <p>Delivering wisdom with a universal vision.</p>
+      </div>
+      <div class="point">
+        <h3>📚 Curated eBooks</h3>
+        <p>Top-tier content from student researchers & thinkers.</p>
+      </div>
+      <div class="point">
+        <h3 data-aos="fade-down">🚀 Empowered Learning</h3>
+        <p>Crafting a smarter, connected future.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Team Section -->
+  <section class="content-section team" id="team"data-aos="zoom-in-up">
+    <h2>Meet the Team</h2>
+    <div class="team-grid">
+      <div class="member">
+        <img src="team1.jpg" alt="Founder" />
+        <h4>B. Krishna</h4>
+        <p>Founder & Visionary Leader</p>
+      </div>
+      <div class="member">
+        <img src="team2.jpg" alt="Researcher" />
+        <h4>Samuel A.</h4>
+        <p>Lead Research & Development</p>
+      </div>
+      <div class="member">
+        <img src="team3.jpg" alt="Creative Director" />
+        <h4>Dishant K.</h4>
+        <p>Creative Strategy & Design</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="rate-us" id="rate"data-aos="fade-up">
+  <h2>Rate Us</h2>
+  <p>We’d love your feedback! Rate your experience and leave us a message.</p>
+  
+  <div class="stars">
+    <span class="star" data-star="1">&#9733;</span>
+    <span class="star" data-star="2">&#9733;</span>
+    <span class="star" data-star="3">&#9733;</span>
+    <span class="star" data-star="4">&#9733;</span>
+    <span class="star" data-star="5">&#9733;</span>
+  </div>
+
+  <textarea placeholder="Write your thoughts here..." class="rate-message"></textarea>
+  <button class="rate-submit">Submit Feedback</button>
+</section>
+
+
+  <!-- Footer Section -->
+<footer class="mega-footer">
+  <div class="footer-container">
+    <div class="footer-brand">
+      <h2>WCG</h2>
+      <p>Empowering young minds through visionary eBooks and research-driven content. Welcome to the future of knowledge.</p>
+    </div>
+
+    <div class="footer-links">
+      <h3>Quick Links</h3>
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#ebooks">eBooks</a></li>
+        <li><a href="https://wisdomcircleblogwcg.blogspot.com/2025/07/vision-behind-wcg-at-wisdom-circle.html">About Us</a></li>
+        <li><a href="#team">Team</a></li>
+      </ul>
+    </div>
+
+    <div class="footer-contact">
+      <h3>Contact</h3>
+      <p><strong>Email:</strong> contact@wcg.org</p>
+      <p><strong>Phone:</strong> +91 98765 43210</p>
+      <p><strong>Address:</strong><br> Wisdom Circle HQ,<br> Knowledge Valley,<br> Hyderabad, India</p>
+    </div>
+
+    <div class="footer-legal">
+      <h3>Legal</h3>
+      <ul>
+        <li><a href="privacy.html">Privacy Policy</a></li>
+        <li><a href="terms.html">Terms & Conditions</a></li>
+        <li><a href="#rate">Rate Us</a></li>
+        <li><a href="#faq">FAQs</a></li>
+      </ul>
+    </div>
+
+    <div class="footer-newsletter">
+      <h3>Newsletter</h3>
+      <p>Subscribe for updates on new eBooks and research.</p>
+      <form>
+        <input type="email" placeholder="Enter your email" />
+        <button type="submit">Subscribe</button>
+      </form>
+    </div>
+  </div>
+
+  <div class="footer-bottom">
+    <p>&copy; 2025 Wisdom Circle Group. All rights reserved.</p>
+  </div>
+</footer>
+
+
+  <script>
+    function scrollToSection(id) {
+      document.getElementById(id)?.scrollIntoView({ behavior: 'smooth' });
+    }
+  </script>
+  <div id="consent-popup" class="popup-overlay">
+  <div class="popup-box">
+    <h2>Before You Continue</h2>
+    <p>
+      By using this site, you agree to our 
+      <a href="privacy.html" target="_blank">Privacy Policy</a> and 
+      <a href="terms.html" target="_blank">Terms & Conditions</a>.
+    </p>
+    <label>
+      <input type="checkbox" id="consent-checkbox"> I have read and agree to the terms.
+    </label>
+    <br><br>
+    <button id="continue-btn" disabled>Continue</button>
+  </div>
+</div>
+<script>
+  const popup = document.getElementById("consent-popup");
+  const checkbox = document.getElementById("consent-checkbox");
+  const continueBtn = document.getElementById("continue-btn");
+
+  // Show popup only if not already accepted
+  if (!localStorage.getItem("wcg_consent_given")) {
+    popup.style.display = "flex";
+  }
+
+  checkbox.addEventListener("change", () => {
+    continueBtn.disabled = !checkbox.checked;
+  });
+
+  continueBtn.addEventListener("click", () => {
+    localStorage.setItem("wcg_consent_given", "true");
+    popup.style.display = "none";
+  });
+</script>
+<!-- AOS Animation Init -->
+<script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+<script>
+  AOS.init({
+    duration: 1000, // animation duration in ms
+    once: true // only animate once
+  });
+</script>
+<div class="wcg-chatbot">
+  <div class="chat-toggle">🤖</div>
+  <div class="chat-window">
+    <div class="chat-header">WCG AI Assistant</div>
+    <div class="chat-messages" id="chat-messages"></div>
+    <input type="text" id="user-input" placeholder="Ask me anything..." />
+    <button id="send-btn">Send</button>
+  </div>
+</div>
+<script>
+  const toggleBtn = document.querySelector('.chat-toggle');
+  const chatWindow = document.querySelector('.chat-window');
+  const sendBtn = document.getElementById('send-btn');
+  const chatMessages = document.getElementById('chat-messages');
+  const userInput = document.getElementById('user-input');
+
+  toggleBtn.onclick = () => {
+    chatWindow.style.display = chatWindow.style.display === 'flex' ? 'none' : 'flex';
+  };
+
+  sendBtn.onclick = async () => {
+    const userText = userInput.value.trim();
+    if (!userText) return;
+
+    chatMessages.innerHTML += `<div><strong>You:</strong> ${userText}</div>`;
+    userInput.value = '';
+
+    const res = await fetch("https://api.openai.com/v1/chat/completions", {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+        "Authorization": "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" // Replace this with your OpenAI API key
+      },
+      body: JSON.stringify({
+        model: "gpt-3.5-turbo",
+        messages: [{ role: "user", content: userText }]
+      })
+    });
+
+    const data = await res.json();
+    const reply = data.choices?.[0]?.message?.content;
+    chatMessages.innerHTML += `<div><strong>WCG AI:</strong> ${reply}</div>`;
+    chatMessages.scrollTop = chatMessages.scrollHeight;
+  };
+</script>
+
+</body>
+</html>

@@ -1,0 +1,23 @@
+[
+  {
+    "id": 1,
+    "title": "The Alien Code",
+    "description": "Exploring cosmic intelligence",
+    "price": 199,
+    "image": "ebook1.jpg"
+  },
+  {
+    "id": 2,
+    "title": "Infinity Within",
+    "description": "Journey into the multiverse",
+    "price": 249,
+    "image": "ebook2.jpg"
+  },
+  {
+    "id": 3,
+    "title": "The 8th Energy",
+    "description": "Matter, antimatter and divine forces",
+    "price": 299,
+    "image": "ebook3.jpg"
+  }
+]

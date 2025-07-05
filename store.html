@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>WCG Store</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <div class="logo">WCG</div>
+    <nav>
+       <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="#mission">Mission</a></li>
+        <li><a href="https://wisdomcircleblogwcg.blogspot.com/2025/07/vision-behind-wcg-at-wisdom-circle.html">About Us</a></li>
+        <li><a href="store.html">eBooks</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section class="store-hero">
+  <div class="interactive-bg">
+    <div class="floating-icons">
+      <span></span><span></span><span></span><span></span>
+    </div>
+  </div>
+
+  <div class="hero-content">
+  <h1 id="typewriter-text">Welcome to WCG eBook Store</h1>
+    <p>Where vision meets knowledge. Explore groundbreaking ideas & powerful reads.</p>
+   <div class="hero-search">
+  <input type="text" placeholder="Search eBooks..." id="search-input" />
+  <button type="button" id="reset-btn">⟳</button>
+</div>
+<p id="no-results" style="display: none; color: #fff; margin-top: 10px;">No matching eBooks found.</p>
+
+  </div>
+</section>
+
+  <section class="product-grid" id="product-grid">
+
+  <div class="product-card">
+  <img src="img/ebook1.jpg" alt="WCG eBook Vol. 1" />
+  <h3>WCG eBook Vol. 1</h3>
+  
+  <div class="rating">
+    <span>⭐</span><span>⭐</span><span>⭐</span><span>⭐</span><span>☆</span>
+  </div>
+  
+  <p class="price">₹299</p>
+
+  <div class="card-buttons">
+    <a href="#" class="add-to-cart">🛒 Add to Cart</a>
+    <a href="checkout.html?product=WCG+eBook+Vol.+1&price=299" class="buy-btn">Buy Now</a>
+  </div>
+</div>
+
+
+ <div class="product-card">
+  <img src="img/ebook1.jpg" alt="WCG eBook Vol. 2" />
+  <h3>WCG eBook Vol. 1</h3>
+  
+  <div class="rating">
+    <span>⭐</span><span>⭐</span><span>⭐</span><span>⭐</span><span>☆</span>
+  </div>
+  
+  <p class="price">₹299</p>
+
+  <div class="card-buttons">
+    <a href="#" class="add-to-cart">🛒 Add to Cart</a>
+    <a href="checkout.html?product=WCG+eBook+Vol.+1&price=299" class="buy-btn">Buy Now</a>
+  </div>
+</div>
+
+  <div class="product-card">
+  <img src="img/ebook1.jpg" alt="WCG eBook Vol. 3" />
+  <h3>WCG eBook Vol. 1</h3>
+  
+  <div class="rating">
+    <span>⭐</span><span>⭐</span><span>⭐</span><span>⭐</span><span>☆</span>
+  </div>
+  
+  <p class="price">₹299</p>
+
+  <div class="card-buttons">
+    <a href="#" class="add-to-cart">🛒 Add to Cart</a>
+    <a href="checkout.html?product=WCG+eBook+Vol.+1&price=299" class="buy-btn">Buy Now</a>
+  </div>
+</div>
+
+<div class="product-card">
+  <img src="img/ebook1.jpg" alt="WCG eBook Vol. 4" />
+  <h3>WCG eBook Vol. 1</h3>
+  
+  <div class="rating">
+    <span>⭐</span><span>⭐</span><span>⭐</span><span>⭐</span><span>☆</span>
+  </div>
+  
+  <p class="price">₹299</p>
+
+  <div class="card-buttons">
+    <a href="#" class="add-to-cart">🛒 Add to Cart</a>
+    <a href="checkout.html?product=WCG+eBook+Vol.+1&price=299" class="buy-btn">Buy Now</a>
+  </div>
+</div>
+
+<div class="product-card">
+  <img src="img/ebook1.jpg" alt="WCG eBook Vol. 5" />
+  <h3>WCG eBook Vol. 1</h3>
+  
+  <div class="rating">
+    <span>⭐</span><span>⭐</span><span>⭐</span><span>⭐</span><span>☆</span>
+  </div>
+  
+  <p class="price">₹299</p>
+
+  <div class="card-buttons">
+    <a href="#" class="add-to-cart">🛒 Add to Cart</a>
+    <a href="checkout.html?product=WCG+eBook+Vol.+1&price=299" class="buy-btn">Buy Now</a>
+  </div>
+</div>
+
+<div class="product-card">
+  <img src="img/ebook1.jpg" alt="WCG eBook Vol. 6" />
+  <h3>WCG eBook Vol. 1</h3>
+  
+  <div class="rating">
+    <span>⭐</span><span>⭐</span><span>⭐</span><span>⭐</span><span>☆</span>
+  </div>
+  
+  <p class="price">₹299</p>
+
+  <div class="card-buttons">
+    <a href="#" class="add-to-cart">🛒 Add to Cart</a>
+    <a href="checkout.html?product=WCG+eBook+Vol.+1&price=299" class="buy-btn">Buy Now</a>
+  </div>
+</div>
+
+  <!-- ...continue up to Vol. 100 -->
+</section>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/vanilla-tilt/1.7.2/vanilla-tilt.min.js"></script>
+<script>
+  VanillaTilt.init(document.querySelectorAll(".product-card"), {
+    max: 15,
+    speed: 400,
+    glare: true,
+    "max-glare": 0.2,
+  });
+</script>
+ <footer class="mega-footer">
+  <div class="footer-container">
+    <div class="footer-brand">
+      <h2>WCG</h2>
+      <p>Empowering young minds through visionary eBooks and research-driven content. Welcome to the future of knowledge.</p>
+    </div>
+
+    <div class="footer-links">
+      <h3>Quick Links</h3>
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#ebooks">eBooks</a></li>
+        <li><a href="https://wisdomcircleblogwcg.blogspot.com/2025/07/vision-behind-wcg-at-wisdom-circle.html">About Us</a></li>
+        <li><a href="#team">Team</a></li>
+      </ul>
+    </div>
+
+    <div class="footer-contact">
+      <h3>Contact</h3>
+      <p><strong>Email:</strong> contact@wcg.org</p>
+      <p><strong>Phone:</strong> +91 98765 43210</p>
+      <p><strong>Address:</strong><br> Wisdom Circle HQ,<br> Knowledge Valley,<br> Hyderabad, India</p>
+    </div>
+
+    <div class="footer-legal">
+      <h3>Legal</h3>
+      <ul>
+        <li><a href="privacy.html">Privacy Policy</a></li>
+        <li><a href="terms.html">Terms & Conditions</a></li>
+        <li><a href="#rate">Rate Us</a></li>
+        <li><a href="#faq">FAQs</a></li>
+      </ul>
+    </div>
+
+    <div class="footer-newsletter">
+      <h3>Newsletter</h3>
+      <p>Subscribe for updates on new eBooks and research.</p>
+      <form>
+        <input type="email" placeholder="Enter your email" />
+        <button type="submit">Subscribe</button>
+      </form>
+    </div>
+  </div>
+
+  <div class="footer-bottom">
+    <p>&copy; 2025 Wisdom Circle Group. All rights reserved.</p>
+  </div>
+</footer>
+
+  <script src="store.js"></script>
+</body>
+</html>
