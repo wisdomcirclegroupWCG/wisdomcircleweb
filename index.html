@@ -190,50 +190,14 @@
   });
 </script>
 <div class="wcg-chatbot">
-  <div class="chat-toggle">🤖</div>
-  <div class="chat-window">
-    <div class="chat-header">WCG AI Assistant</div>
-    <div class="chat-messages" id="chat-messages"></div>
-    <input type="text" id="user-input" placeholder="Ask me anything..." />
-    <button id="send-btn">Send</button>
+  <div class="chat-toggle" onclick="toggleChat()">💬</div>
+  <div class="chat-window" id="chatWindow" style="display: none;">
+    <div class="chat-header">🤖 WCG Assistant</div>
+    <div class="chat-messages" id="chatMessages"></div>
+    <input type="text" id="user-input" placeholder="Ask me anything..." onkeydown="handleKey(event)" />
+    <button id="send-btn" onclick="sendMessage()">Send</button>
   </div>
 </div>
-<script>
-  const toggleBtn = document.querySelector('.chat-toggle');
-  const chatWindow = document.querySelector('.chat-window');
-  const sendBtn = document.getElementById('send-btn');
-  const chatMessages = document.getElementById('chat-messages');
-  const userInput = document.getElementById('user-input');
-
-  toggleBtn.onclick = () => {
-    chatWindow.style.display = chatWindow.style.display === 'flex' ? 'none' : 'flex';
-  };
-
-  sendBtn.onclick = async () => {
-    const userText = userInput.value.trim();
-    if (!userText) return;
-
-    chatMessages.innerHTML += `<div><strong>You:</strong> ${userText}</div>`;
-    userInput.value = '';
-
-    const res = await fetch("https://api.openai.com/v1/chat/completions", {
-      method: "POST",
-      headers: {
-        "Content-Type": "application/json",
-        "Authorization": "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" // Replace this with your OpenAI API key
-      },
-      body: JSON.stringify({
-        model: "gpt-3.5-turbo",
-        messages: [{ role: "user", content: userText }]
-      })
-    });
-
-    const data = await res.json();
-    const reply = data.choices?.[0]?.message?.content;
-    chatMessages.innerHTML += `<div><strong>WCG AI:</strong> ${reply}</div>`;
-    chatMessages.scrollTop = chatMessages.scrollHeight;
-  };
-</script>
-
+<script src="chatbot.js"></script>
 </body>
 </html>
