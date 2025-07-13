@@ -70,7 +70,8 @@ nav a::after {
   position: absolute;
   left: 0;
   bottom: 6px;
-  width: 100%;
+ width: 100%;
+max-width: 100%;
   height: 3px;
   background: linear-gradient(90deg, var(--indigo), var(--lavender), var(--teal), var(--sage), var(--sand));
   transform: scaleX(0);
@@ -957,4 +958,26 @@ nav a:hover::after {
       .hero p { font-size: 1.1rem; padding: 0 10px; }
       nav ul { flex-direction: column; gap: 10px; }
     }
-  
+  @media (max-width: 600px) {
+  .container,
+  .product-card,
+  .chat-window,
+  .footer,
+  .rate-us,
+  .hero,
+  .store-hero {
+    width: 100%;
+    padding: 0 16px;
+  }
+
+  .hero h1,
+  .store-hero h1 {
+    font-size: 1.8rem;
+    line-height: 1.3;
+  }
+
+  nav ul {
+    flex-direction: column;
+    gap: 10px;
+  }
+}
