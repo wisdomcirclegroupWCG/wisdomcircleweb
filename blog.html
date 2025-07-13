@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>WCG Blog</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <header class="blog-header">
+    <h1>📚 WCG Blog</h1>
+    <p>Select a topic or search directly to explore blog posts.</p>
+  </header>
+
+  <section class="blog-controls">
+    <input type="text" id="search-bar" placeholder="🔍 Search blog..." oninput="searchPosts()" />
+
+    <select id="topic-select" onchange="filterPosts()">
+      <option value="all">📂 All Topics</option>
+      <option value="tech">🔧 Technology</option>
+      <option value="science">🧪 Science</option>
+      <option value="education">📖 Education</option>
+      <option value="ai">🤖 AI</option>
+      <option value="space">🚀 Space</option>
+      <option value="philosophy">🧠 Consciousness</option>
+    </select>
+  </section>
+
+  <section id="blog-posts">
+    <article class="post" data-topic="tech">🔧 <strong>Quantum Tech:</strong> The future is fast, powerful, and quantum-enabled.</article>
+    <article class="post" data-topic="science">🧪 <strong>Gene Editing:</strong> CRISPR is shaping biology’s destiny.</article>
+    <article class="post" data-topic="education">📖 <strong>AI Classrooms:</strong> Learning smarter, not harder.</article>
+    <article class="post" data-topic="ai">🤖 <strong>Can AI Feel?</strong> Let’s talk about empathy in algorithms.</article>
+    <article class="post" data-topic="space">🚀 <strong>Where Are the Aliens?</strong> Multiverse might hold clues.</article>
+    <article href=https://wisdomcircleblogwcg.blogspot.com/2025/07/consciousness-through-complex-numbers.html class="post" data-topic="philosophy">🧠 <strong>Mathematics and Consciousness</strong> Higher dimensions and consciousness.</article>
+  </section>
+
+  <script>
+    function filterPosts() {
+      const topic = document.getElementById('topic-select').value;
+      const posts = document.querySelectorAll('.post');
+      posts.forEach(post => {
+        post.style.display = (topic === 'all' || post.dataset.topic === topic) ? 'block' : 'none';
+      });
+    }
+
+    function searchPosts() {
+      const query = document.getElementById('search-bar').value.toLowerCase();
+      const posts = document.querySelectorAll('.post');
+      posts.forEach(post => {
+        post.style.display = post.textContent.toLowerCase().includes(query) ? 'block' : 'none';
+      });
+    }
+  </script>
+<footer class="mega-footer">
+  <div class="footer-container">
+    <div class="footer-brand">
+      <h2>WCG</h2>
+      <p>Empowering young minds through visionary eBooks and research-driven content. Welcome to the future of knowledge.</p>
+    </div>
+
+    <div class="footer-links">
+      <h3>Quick Links</h3>
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#ebooks">eBooks</a></li>
+        <li><a href="https://wisdomcircleblogwcg.blogspot.com/2025/07/vision-behind-wcg-at-wisdom-circle.html">About Us</a></li>
+        <li><a href="#team">Team</a></li>
+      </ul>
+    </div>
+
+    <div class="footer-contact">
+      <h3>Contact</h3>
+      <p><strong>Email:</strong> contact@wcg.org</p>
+      <p><strong>Phone:</strong> +91 98765 43210</p>
+      <p><strong>Address:</strong><br> Wisdom Circle HQ,<br> Knowledge Valley,<br> Hyderabad, India</p>
+    </div>
+
+    <div class="footer-legal">
+      <h3>Legal</h3>
+      <ul>
+        <li><a href="privacy.html">Privacy Policy</a></li>
+        <li><a href="terms.html">Terms & Conditions</a></li>
+        <li><a href="#rate">Rate Us</a></li>
+        <li><a href="#faq">FAQs</a></li>
+      </ul>
+    </div>
+
+    <div class="footer-newsletter">
+      <h3>Newsletter</h3>
+      <p>Subscribe for updates on new eBooks and research.</p>
+      <form>
+        <input type="email" placeholder="Enter your email" />
+        <button type="submit">Subscribe</button>
+      </form>
+    </div>
+  </div>
+
+  <div class="footer-bottom">
+    <p>&copy; 2025 Wisdom Circle Group. All rights reserved.</p>
+  </div>
+</footer>
+</body>
+</html>
