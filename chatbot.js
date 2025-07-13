@@ -47,7 +47,7 @@ async function sendMessage() {
   } catch (err) {
     console.error("AI Error:", err);
     typing.remove();
-    addMessage("🚨 Failed to fetch response. Please try again later.", "bot");
+    addMessage("Hi! I'm WCG Chatbot, I'm still under development and I will be back soon!😊", "bot");
   }
 }
 
